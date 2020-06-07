@@ -1,15 +1,37 @@
-{
+* {
   margin: 0;
  }
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: black;
+  font-family: arial;
+  color:white;
+  align-items: center;
+  height: 100vh;
+}
 
- div {
-  line-height: 100vh;
+div {
+  //line-height: 100vh;
+  margin: 60px;
+  width: 100vw;
+  border-bottom: 1px solid gray;
   text-align: center;
-  font-size: 50px;
+  font-size: 30px;
   font-family: arial;
  }
 
- span {
+span {
   font-weight: bold;
   font-family: monospace;
  }
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-family: monospace;
+  font-size: 30px;
+}

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  background-color: black;
+  font-family: arial;
+  color: white;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100vh;
+}
+
+div {
+  margin: 60px;
+  width: 100vw;
+  border-bottom: 1px solid gray;
+  text-align: center;
+  font-size: 30px;
+  font-family: arial;
+}
+
+span {
+  font-weight: bold;
+  font-family: monospace;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+p {
+  font-family: monospace;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */
