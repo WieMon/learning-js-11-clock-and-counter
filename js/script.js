@@ -34,3 +34,41 @@ setInterval (() => {
   spanM.textContent = minutes;
   spanS.textContent = secs
 }, 1000)
+
+
+//Timer
+const btnTimer = document.querySelector('.main');
+const btnReset = document.querySelector('.reset');
+const h1Timer = document.querySelector('.timer');
+
+let time = 0;
+let active = false;
+
+const timer = () => {
+  if (!active) {
+    active = !active;
+    console.log(active)
+    btnTimer.textContent = 'Pause';
+    idI = setInterval(start, 10);
+  } else {
+    active = !active
+    btnTimer.textContent = 'Start';
+    clearInterval(idI);
+  }
+}
+
+const start = () => {
+  time++;
+  h1Timer.textContent = (time / 100).toFixed(2);
+}
+
+const reset = () => {
+  time = 0;
+  h1Timer.textContent = '---';
+  active = false;
+  btnTimer.textContent = 'Start';
+  clearInterval(idI)
+}
+
+btnTimer.addEventListener('click', timer);
+btnReset.addEventListener('click', reset);
